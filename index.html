@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>karolis lukoševičius</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>karolis lukoševičius, portfolio</h1>
+
+        <div class="track-list">
+            <h2>jūreivio daina</h2>
+            <div class="track" data-audio="jureiviodaina2.mp3">
+                <img src="iconjureivio.jpg" alt="Track 2">
+            </div>
+            <h2>post-punk</h2>
+            <div class="track" data-audio="postpunk.mp3">
+                <img src="iconpostpunk.jpg" alt="Track 3">
+            </div>
+            <h2>gol gumbaz MEGAMIX (excerpt)</h2>
+            <div class="track" data-audio="golgumbaz.mp3">
+                <img src="icongolgumbaz.jpg" alt="Track 5">
+            </div>
+            <h2>džiazo kvartetas</h2>
+            <div class="track" data-audio="track2.mp3">
+                <img src="iconjazz.jpg" alt="Track 1">
+            </div>
+            <h2>cato garso takelis</h2>
+            <div class="track" data-audio="catosc.mp3">
+                <img src="iconcato.jpg" alt="Track 4">
+            </div>
+        </div>
+    </div>
+
+    <div class="audio-player">
+        <audio id="audio"></audio>
+        <button id="play-button"><i class="fas fa-play"></i></button>
+        <input type="range" id="track-timeline" value="0" step="1" min="0">
+        <span id="current-time">0:00</span> / <span id="total-duration">0:00</span>
+        <input type="range" id="volume-control" value="100" min="0" max="100">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
